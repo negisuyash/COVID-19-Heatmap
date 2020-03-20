@@ -1,5 +1,6 @@
 
 from flask import Flask,render_template,request,send_file
+from dataFetcher import createHeatMap,summaryData
 import json
 
 
@@ -21,6 +22,12 @@ def index():
 def getHeatMap():
 	return render_template('export.html')
 
+@app.route('/triggerData')
+def triggerData():
+	print('triggerring new data')
+	createHeatMap()
+	summaryData()
+	return 'trigger hit'
 
 
 if __name__=='__main__':

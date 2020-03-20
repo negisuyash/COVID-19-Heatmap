@@ -12,7 +12,7 @@ import json
 # In[2]:
 
 def createHeatMap():
-	gmaps.configure(api_key='AIzaSyCu4BBQA_f5u428YPwFB1Zls8UwFXaFN1g')
+	gmaps.configure(api_key='')
 
 	covid19_data=requests.get('https://api.rootnet.in/covid19-in/stats/latest').json()
 	covid19_contact=requests.get('https://api.rootnet.in/covid19-in/contacts').json()
