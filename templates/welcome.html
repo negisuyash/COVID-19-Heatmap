@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORONA INFO PAGE</title>
+	<style>
+	.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.content {
+  max-width: 650px;
+  margin: auto;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+	<h3><b><u>THIS IS PAGE SHOWS LIVE COUNT AND HEAT MAP FOR COVID-19 EFFECTED AREAS</u></b></h3>
+	<i>central contact details in case of emergency:</i><br>
+	<b>number:</b> +91-11-23978046<br>
+	<b>toll free:</b> 1075<br>
+
+	<a href="mailto:ncov2019@gov.in" target="_blank"><img src="{{url_for('static', filename='gmail-icon.png')}}" style="height: 50px; width: 50px;"></a>    
+	<a href="https://twitter.com/MoHFW_INDIA" target="_blank"><img src="{{url_for('static', filename='twitter-icon.png')}}" style="height: 50px; width: 50px;"> </a>    
+	<a href="https://www.facebook.com/MoHFWIndia" target="_blank"><img src="{{url_for('static', filename='facebook-icon.png')}}" style="height: 50px; width: 50px;"></a>    
+	<a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><img src="{{url_for('static', filename='india-icon.png')}}" style="height: 50px; width: 50px;"></a>
+	<br>
+	below is the heat map for COVID-19 Spread officially reported cases.<br>
+	<i><b>note:</b></i> Click on <b>black dots/marker in map</b> for more information.          
+	<!-- Trigger/Open The Modal -->
+<button  class="button" style="vertical-align:middle" id="myBtn"><span>Show All India Data </span></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <u>ALL INDIA COLLECTIVE DATA</u><br><br>
+    <b>TOTAL:</b> {{total}}<br><br><b>Confirmed Cases Indian:</b> {{confirmedCasesIndian}}<br><br><b>Confirmed Cases Foreign:</b> {{confirmedCasesForeign}}<br><br><b>Discharged:</b> {{discharged}}<br><br><b>Deaths:</b> {{deaths}}
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+	</div>
+	<div style="padding-left: 190px;">
+	<iframe src="/getHeatMap" style="height: 460px; width: 1000px;"></iframe>
+	</div>
+
+
+
+</body>
+</html>

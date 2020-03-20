@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyWidget export</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.14.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "f64f3a5adbd94358a5e4a13b45bc2045": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.1.0",
+      "state": {
+        "height": "100%",
+        "width": "100%"
+      }
+    },
+    "4909a6bf4c5d4e0ca58ea250cdeb6fbb": {
+      "model_name": "PlainmapModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "_dom_classes": [],
+        "configuration": {
+          "api_key": "AIzaSyCu4BBQA_f5u428YPwFB1Zls8UwFXaFN1g"
+        },
+        "data_bounds": [
+          [
+            9.707706551446686,
+            67.30522718800671
+          ],
+          [
+            36.296262720775545,
+            96.25377408122013
+          ]
+        ],
+        "initial_viewport": {
+          "type": "ZOOM_CENTER",
+          "center": [
+            23.5936832,
+            78.962883
+          ],
+          "zoom_level": 4
+        },
+        "layers": [
+          "IPY_MODEL_bcf9e90cefc94622ad182cc512bcd579",
+          "IPY_MODEL_9eba9637822e43b3bc7b93ceb40c9fff"
+        ],
+        "layout": "IPY_MODEL_f64f3a5adbd94358a5e4a13b45bc2045"
+      }
+    },
+    "eb34610fb0654e928b96a6681e0ccda1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.1.0",
+      "state": {}
+    },
+    "78f52ca07da24b3f9382f46649c5af2e": {
+      "model_name": "ToolbarModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "_dom_classes": [],
+        "layer_controls": [],
+        "layout": "IPY_MODEL_eb34610fb0654e928b96a6681e0ccda1"
+      }
+    },
+    "6a5b871d30c84f0383da4ed5354abb58": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.1.0",
+      "state": {}
+    },
+    "f95add13982444409f032267c95d0b3e": {
+      "model_name": "ErrorsBoxModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "_dom_classes": [],
+        "errors": [],
+        "layout": "IPY_MODEL_6a5b871d30c84f0383da4ed5354abb58"
+      }
+    },
+    "86a4ab618c6040d688ab47eff0a5b3d8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.1.0",
+      "state": {
+        "height": "420px"
+      }
+    },
+    "15d7930c22bf490a8738a970c3e382e9": {
+      "model_name": "FigureModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "_dom_classes": [],
+        "_errors_box": "IPY_MODEL_f95add13982444409f032267c95d0b3e",
+        "_map": "IPY_MODEL_4909a6bf4c5d4e0ca58ea250cdeb6fbb",
+        "_toolbar": "IPY_MODEL_78f52ca07da24b3f9382f46649c5af2e",
+        "layout": "IPY_MODEL_86a4ab618c6040d688ab47eff0a5b3d8"
+      }
+    },
+    "bcf9e90cefc94622ad182cc512bcd579": {
+      "model_name": "WeightedHeatmapLayerModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "data_bounds": [
+          [
+            9.707706551446686,
+            67.3052271880067
+          ],
+          [
+            36.296262720775545,
+            96.25377408122013
+          ]
+        ],
+        "gradient": null,
+        "locations": [
+          [
+            11.7400867,
+            92.6586401
+          ],
+          [
+            15.9128998,
+            79.7399875
+          ],
+          [
+            28.2179994,
+            94.7277528
+          ],
+          [
+            26.2006043,
+            92.9375739
+          ],
+          [
+            25.0960742,
+            85.31311939999999
+          ],
+          [
+            30.7333148,
+            76.7794179
+          ],
+          [
+            21.2786567,
+            81.8661442
+          ],
+          [
+            20.1808672,
+            73.0169135
+          ],
+          [
+            28.7040592,
+            77.10249019999999
+          ],
+          [
+            15.2993265,
+            74.12399599999999
+          ],
+          [
+            29.0587757,
+            76.085601
+          ],
+          [
+            31.1048294,
+            77.17339009999999
+          ],
+          [
+            34.0233028,
+            75.7738873
+          ],
+          [
+            34.2996176,
+            78.2931706
+          ],
+          [
+            23.6101808,
+            85.2799354
+          ],
+          [
+            15.3172775,
+            75.7138884
+          ],
+          [
+            10.8505159,
+            76.2710833
+          ],
+          [
+            10.3280265,
+            72.78463359999999
+          ],
+          [
+            22.9734229,
+            78.6568942
+          ],
+          [
+            19.7514798,
+            75.7138884
+          ],
+          [
+            24.6637173,
+            93.90626879999999
+          ],
+          [
+            25.4670308,
+            91.366216
+          ],
+          [
+            23.164543,
+            92.9375739
+          ],
+          [
+            26.1584354,
+            94.5624426
+          ],
+          [
+            20.9516658,
+            85.0985236
+          ],
+          [
+            11.9415524,
+            79.8082865
+          ],
+          [
+            31.1471305,
+            75.34121789999999
+          ],
+          [
+            27.0238036,
+            74.21793260000001
+          ],
+          [
+            27.5329718,
+            88.5122178
+          ],
+          [
+            11.1271225,
+            78.6568942
+          ],
+          [
+            23.9408482,
+            91.9881527
+          ],
+          [
+            26.8467088,
+            80.9461592
+          ],
+          [
+            30.066753,
+            79.01929969999999
+          ],
+          [
+            22.9867569,
+            87.8549755
+          ],
+          [
+            18.1124372,
+            79.01929969999999
+          ],
+          [
+            22.258652,
+            71.1923805
+          ]
+        ],
+        "point_radius": 45.0,
+        "weights": [
+          0,
+          3,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          17,
+          0,
+          17,
+          0,
+          4,
+          10,
+          0,
+          15,
+          28,
+          0,
+          0,
+          52,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          2,
+          17,
+          0,
+          3,
+          0,
+          23,
+          3,
+          2,
+          17,
+          5
+        ]
+      }
+    },
+    "d85e937d837c4c55a65899e20e5d66b8": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Andaman And Nicobar</u><br><br><b>NO INFO ON YET!!</b>",
+        "location": [
+          11.7400867,
+          92.6586401
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "974daa0509f2456f94764c02f7522e68": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Andhra Pradesh</u><br><br><b>Confimed Cases Indian:</b> 3<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> +91-866-2410978<br>",
+        "location": [
+          15.9128998,
+          79.7399875
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "4d194dec8b744e5793d97f0bdee02c10": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Arunachal Pradesh</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-9436055743<br>",
+        "location": [
+          28.2179994,
+          94.7277528
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "0228a3021cb343e984715fb4f8a2808b": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Assam</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-6913347770<br>",
+        "location": [
+          26.2006043,
+          92.9375739
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "3d0e738afc3345d28b78a44c8f1a7cc2": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Bihar</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          25.0960742,
+          85.31311939999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "7524b5c31b384df2bb407a8436336e36": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Union Territory of Chandigarh</u><br><br><b>Confimed Cases Indian:</b> 1<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0",
+        "location": [
+          30.7333148,
+          76.7794179
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "492eba35e6414dae9f914c190ece1a2a": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Chhattisgarh</u><br><br><b>Confimed Cases Indian:</b> 1<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          21.2786567,
+          81.8661442
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "840d248aa105487f9d1c453adc4ee781": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Dadra And Nagar Haveli</u><br><br><b>NO INFO ON YET!!</b>",
+        "location": [
+          20.1808672,
+          73.0169135
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "3e583f15a2d44c718be62e7715d284db": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Delhi</u><br><br><b>Confimed Cases Indian:</b> 16<br><br><b>Confirmed Cases Foreign:</b> 1<br><br><b>Deaths:</b> 1<br><br><b>Discharged:</b> 5<br><br><b>Contact Detail:</b> +91-11-22307145<br>",
+        "location": [
+          28.7040592,
+          77.10249019999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "4aa317c04d044635840fb6fb2a4bc396": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Goa</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          15.2993265,
+          74.12399599999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "341fba51f0654ecaa39d131e24b3c4ee": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Haryana</u><br><br><b>Confimed Cases Indian:</b> 3<br><br><b>Confirmed Cases Foreign:</b> 14<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> +91-8558893911<br>",
+        "location": [
+          29.0587757,
+          76.085601
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "481a127d98d74b08999f15e699e571fa": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Himachal Pradesh</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          31.1048294,
+          77.17339009999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "b9a52099012c41ddb5e4e3efa8428f61": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Union Territory of Jammu and Kashmir</u><br><br><b>Confimed Cases Indian:</b> 4<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0",
+        "location": [
+          34.0233028,
+          75.7738873
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "827c9bdba22e4d45b69da0faeec9ea01": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Union Territory of Ladakh</u><br><br><b>Confimed Cases Indian:</b> 10<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0",
+        "location": [
+          34.2996176,
+          78.2931706
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "b7bfd0f3d51047b1addf65ca83c2636e": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Jharkhand</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          23.6101808,
+          85.2799354
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "d653d14437674c07aa8538b90498aa93": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Karnataka</u><br><br><b>Confimed Cases Indian:</b> 15<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 1<br><br><b>Discharged:</b> 1<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          15.3172775,
+          75.7138884
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "12e8df63ed5948069b18f53e5bc51870": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Kerala</u><br><br><b>Confimed Cases Indian:</b> 26<br><br><b>Confirmed Cases Foreign:</b> 2<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 3<br><br><b>Contact Detail:</b> +91-471-2552056<br>",
+        "location": [
+          10.8505159,
+          76.2710833
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "4da791b7e6c44fb3943942dfd489933a": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Lakshadweep</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          10.3280265,
+          72.78463359999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "35358e9bfb104093816a49cdc954de33": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Madhya Pradesh</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-755-2527177<br>",
+        "location": [
+          22.9734229,
+          78.6568942
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "6ddd2065386b4ffc9acaaadaa9326e3c": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Maharashtra</u><br><br><b>Confimed Cases Indian:</b> 49<br><br><b>Confirmed Cases Foreign:</b> 3<br><br><b>Deaths:</b> 1<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> +91-20-26127394<br>",
+        "location": [
+          19.7514798,
+          75.7138884
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "5b5626ed48ba44c4a3ae299abeeb0440": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Manipur</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-3852411668<br>",
+        "location": [
+          24.6637173,
+          93.90626879999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "f7003d0b1f6d4113b187245d70ada023": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Meghalaya</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 108<br>",
+        "location": [
+          25.4670308,
+          91.366216
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "81cde898652745898143010bdb8906d2": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Mizoram</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 102<br>",
+        "location": [
+          23.164543,
+          92.9375739
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "3e41b1233f73435c859d208a6486412f": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Nagaland</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-7005539653<br>",
+        "location": [
+          26.1584354,
+          94.5624426
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "9566d5c25f4b4d77b224255ec7f0d955": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Odisha</u><br><br><b>Confimed Cases Indian:</b> 2<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> +91-9439994859<br>",
+        "location": [
+          20.9516658,
+          85.0985236
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "bd613329b19540db8fef0e5d454aa548": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Puducherry</u><br><br><b>Confimed Cases Indian:</b> 1<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          11.9415524,
+          79.8082865
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "159723b24e364a3fa4e41b7b306beb18": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Punjab</u><br><br><b>Confimed Cases Indian:</b> 2<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 1<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          31.1471305,
+          75.34121789999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "15100a6644484d06a56b3fda4e412972": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Rajasthan</u><br><br><b>Confimed Cases Indian:</b> 15<br><br><b>Confirmed Cases Foreign:</b> 2<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 3<br><br><b>Contact Detail:</b> +91-141-2225624<br>",
+        "location": [
+          27.0238036,
+          74.21793260000001
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "ba3f466a88e44f28b3f32d3058c5338f": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Sikkim</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          27.5329718,
+          88.5122178
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "b7176054609e4ff09e1fb19ef6933d32": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Tamil Nadu</u><br><br><b>Confimed Cases Indian:</b> 3<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 1<br><br><b>Contact Detail:</b> +91-44-29510500<br>",
+        "location": [
+          11.1271225,
+          78.6568942
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "3a1c2b91c97f4b8e970a0fca773793cf": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Tripura</u><br><br><b>NO INFO ON YET!!</b><br><br><b>Contact Detail:</b> +91-381-2315879<br>",
+        "location": [
+          23.9408482,
+          91.9881527
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "054b9e9a26d8409a8c8c9290bb820417": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Uttar Pradesh</u><br><br><b>Confimed Cases Indian:</b> 22<br><br><b>Confirmed Cases Foreign:</b> 1<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 9<br><br><b>Contact Detail:</b> 18001805145<br>",
+        "location": [
+          26.8467088,
+          80.9461592
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "bd30be445e5b4cfd8252bca040d93abe": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Uttarakhand</u><br><br><b>Confimed Cases Indian:</b> 3<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          30.066753,
+          79.01929969999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "09a7f136137449a3891ffe14eaf2954f": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>West Bengal</u><br><br><b>Confimed Cases Indian:</b> 2<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 1800313444222,+91-3323412600,<br>",
+        "location": [
+          22.9867569,
+          87.8549755
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "4f4517882b054facbaafaadb2e6f44d2": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Telengana</u><br><br><b>Confimed Cases Indian:</b> 8<br><br><b>Confirmed Cases Foreign:</b> 9<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 1",
+        "location": [
+          18.1124372,
+          79.01929969999999
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "8128a5ed73ab4236a103fa54667fa354": {
+      "model_name": "SymbolModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "display_info_box": true,
+        "fill_color": null,
+        "info_box_content": "<u>Gujarat</u><br><br><b>Confimed Cases Indian:</b> 5<br><br><b>Confirmed Cases Foreign:</b> 0<br><br><b>Deaths:</b> 0<br><br><b>Discharged:</b> 0<br><br><b>Contact Detail:</b> 104<br>",
+        "location": [
+          22.258652,
+          71.1923805
+        ],
+        "scale": 3,
+        "stroke_color": null
+      }
+    },
+    "9eba9637822e43b3bc7b93ceb40c9fff": {
+      "model_name": "MarkerLayerModel",
+      "model_module": "jupyter-gmaps",
+      "model_module_version": "0.9.0",
+      "state": {
+        "data_bounds": [
+          [
+            9.707706551446686,
+            67.3052271880067
+          ],
+          [
+            36.296262720775545,
+            96.25377408122013
+          ]
+        ],
+        "markers": [
+          "IPY_MODEL_d85e937d837c4c55a65899e20e5d66b8",
+          "IPY_MODEL_974daa0509f2456f94764c02f7522e68",
+          "IPY_MODEL_4d194dec8b744e5793d97f0bdee02c10",
+          "IPY_MODEL_0228a3021cb343e984715fb4f8a2808b",
+          "IPY_MODEL_3d0e738afc3345d28b78a44c8f1a7cc2",
+          "IPY_MODEL_7524b5c31b384df2bb407a8436336e36",
+          "IPY_MODEL_492eba35e6414dae9f914c190ece1a2a",
+          "IPY_MODEL_840d248aa105487f9d1c453adc4ee781",
+          "IPY_MODEL_3e583f15a2d44c718be62e7715d284db",
+          "IPY_MODEL_4aa317c04d044635840fb6fb2a4bc396",
+          "IPY_MODEL_341fba51f0654ecaa39d131e24b3c4ee",
+          "IPY_MODEL_481a127d98d74b08999f15e699e571fa",
+          "IPY_MODEL_b9a52099012c41ddb5e4e3efa8428f61",
+          "IPY_MODEL_827c9bdba22e4d45b69da0faeec9ea01",
+          "IPY_MODEL_b7bfd0f3d51047b1addf65ca83c2636e",
+          "IPY_MODEL_d653d14437674c07aa8538b90498aa93",
+          "IPY_MODEL_12e8df63ed5948069b18f53e5bc51870",
+          "IPY_MODEL_4da791b7e6c44fb3943942dfd489933a",
+          "IPY_MODEL_35358e9bfb104093816a49cdc954de33",
+          "IPY_MODEL_6ddd2065386b4ffc9acaaadaa9326e3c",
+          "IPY_MODEL_5b5626ed48ba44c4a3ae299abeeb0440",
+          "IPY_MODEL_f7003d0b1f6d4113b187245d70ada023",
+          "IPY_MODEL_81cde898652745898143010bdb8906d2",
+          "IPY_MODEL_3e41b1233f73435c859d208a6486412f",
+          "IPY_MODEL_9566d5c25f4b4d77b224255ec7f0d955",
+          "IPY_MODEL_bd613329b19540db8fef0e5d454aa548",
+          "IPY_MODEL_159723b24e364a3fa4e41b7b306beb18",
+          "IPY_MODEL_15100a6644484d06a56b3fda4e412972",
+          "IPY_MODEL_ba3f466a88e44f28b3f32d3058c5338f",
+          "IPY_MODEL_b7176054609e4ff09e1fb19ef6933d32",
+          "IPY_MODEL_3a1c2b91c97f4b8e970a0fca773793cf",
+          "IPY_MODEL_054b9e9a26d8409a8c8c9290bb820417",
+          "IPY_MODEL_bd30be445e5b4cfd8252bca040d93abe",
+          "IPY_MODEL_09a7f136137449a3891ffe14eaf2954f",
+          "IPY_MODEL_4f4517882b054facbaafaadb2e6f44d2",
+          "IPY_MODEL_8128a5ed73ab4236a103fa54667fa354"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "15d7930c22bf490a8738a970c3e382e9"}
+</script>
+
+</body>
+</html>
