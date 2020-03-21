@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>CORONA INFO PAGE</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<style>
 	.button {
   display: inline-block;
@@ -86,26 +89,52 @@
   cursor: pointer;
 }
 </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 	
 	</div>
-	<div class="content">
-	<h3 style="position: relative;"><b><u>COVID-19 INDIA DATA</u></b></h3>
-	<i>central contact details in case of emergency:</i><br><br>
-	<b>number:</b> +91-11-23978046<br><br>
-	<b>toll free:</b> 1075<br><br>
+	<div >
+	<div class="jumbotron text-center" style="margin-bottom:0">
+	<h3 style="position: relative;"><b><u>COVID-19 INDIA DATA</u></b></h3></div>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>     
+        <span class="icon-bar"></span>                    
+      </button>
+      <a class="navbar-brand" href="#">COVID-19-INDIA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#" id="authBtn">About/MastHead</a></li>
+        <li><a href="#" id="myBtn">Total Stat</a></li>
+        <li><a href="#" id="linkBtn">Essential Links</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	<a href="mailto:ncov2019@gov.in" target="_blank"><img src="{{url_for('static', filename='gmail-icon.png')}}" style="height: 40px; width: 40px;"></a>    
-	<a href="https://twitter.com/MoHFW_INDIA" target="_blank"><img src="{{url_for('static', filename='twitter-icon.png')}}" style="height: 40px; width: 40px;"> </a>    
-	<a href="https://www.facebook.com/MoHFWIndia" target="_blank"><img src="{{url_for('static', filename='facebook-icon.png')}}" style="height: 40px; width: 40px;"></a>    
-	<a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><img src="{{url_for('static', filename='india-icon.png')}}" style="height: 40px; width: 40px;"></a>
-	<br><br>
-	below is the heat map for COVID-19 Spread officially reported cases.<br><br>
-	<i><b>note:</b></i> Click on <b>black dots/marker in map</b> for more information. 
-	<br>
-	<div style="float: left;">
-		<button  class="button" style="vertical-align:middle" id="authBtn"><span>About the Developer </span></button>
+<div class="container">
+  <div>
+  	<div class="col-sm-4">
+	<i>central contact details in case of emergency:</i></div>
+	<div class="col-sm-3">
+	<b>number:</b> +91-11-23978046 </div>
+	<div class="col-sm-2">
+	<b>toll free:</b> 1075</div></div><br><br>
+<div class="container">
+	<p>	<i><b>note:</b></i> Click on <b>black dots/marker in map</b> for more information. </p>
+</div>
+
+
+	<div>
+		<!-- <button  class="button" style="vertical-align:middle" id="authBtn"><span>About the Developer </span></button> -->
 
 <!-- The Modal -->
 <div id="authorModal" class="modal">
@@ -113,10 +142,11 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
+    <p>
     <b>This Website is developed by <a href="https://linkedin.com/in/suyash-negi-789231102" target="_blank">Suyash Negi</a> for live updates and data representation of COVID-19 spread in India</b><br><br>
     <u>DISCLAIMER</u><br><br>
     <i>All the data showed here is from third party API and the creator of <a href="https://covid-19-in.herokuapp.com" target="_blank">this</a> website are not responsible for data presented</i><br><br>
-    Stay Safe. 
+    Stay Safe. </p>
   </div>
 
 </div>
@@ -142,15 +172,59 @@ span1.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal1) {
+window.onclick = function(event1) {
+  if (event1.target == modal1) {
     modal1.style.display = "none";
   }
 }
 </script>  
-<div style="float: right;">       
+<div>
+		<!-- <button  class="button" style="vertical-align:middle" id="authBtn"><span>About the Developer </span></button> -->
+
+<!-- The Modal -->
+<div id="linkModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href="mailto:ncov2019@gov.in" target="_blank"><img src="{{url_for('static', filename='gmail-icon.png')}}" style="height: 40px; width: 40px;"></a>    
+	<a href="https://twitter.com/MoHFW_INDIA" target="_blank"><img src="{{url_for('static', filename='twitter-icon.png')}}" style="height: 40px; width: 40px;"> </a>    
+	<a href="https://www.facebook.com/MoHFWIndia" target="_blank"><img src="{{url_for('static', filename='facebook-icon.png')}}" style="height: 40px; width: 40px;"></a>    
+	<a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><img src="{{url_for('static', filename='india-icon.png')}}" style="height: 40px; width: 40px;"></a>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal2 = document.getElementById("linkModal");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("linkBtn");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event2) {
+  if (event2.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+</script>
+<div >       
 	<!-- Trigger/Open The Modal -->
-<button  class="button" style="vertical-align:middle; " id="myBtn"><span>Show All India Data </span></button>
+<!-- <button  class="button" style="vertical-align:middle; " id="myBtn"><span>Show All India Data </span></button> -->
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -172,7 +246,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[1];
+var span = document.getElementsByClassName("close")[2];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -194,8 +268,8 @@ window.onclick = function(event) {
 </div></div>
 	</div>
 	<br>
-	<div style="margin: auto;">
-	<iframe src="/getHeatMap" style="height: 460px; width: 1000px;"></iframe>
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="/getHeatMap" ></iframe>
 	</div>
 
 
