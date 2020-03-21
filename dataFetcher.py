@@ -87,5 +87,5 @@ class HeatMapper:
 				json.dump(covid19_data,outputfile)
 
 if '__main__'==__name__:
-	createHeatMap()
-	summaryData()
+	HeatMapper().createHeatMap()
+	HeatMapper().summaryData()
