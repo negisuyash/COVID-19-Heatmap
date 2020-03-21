@@ -2,6 +2,13 @@
 from flask import Flask,render_template,request,send_file
 from dataFetcher import createHeatMap,summaryData
 import json
+# from apscheduler.scheduler import Scheduler
+
+
+
+# sched = Scheduler()
+# sched.daemonic = False
+# sched.start()
 
 
 # API_KEY='AIzaSyBx1SkG_lcKjI1HJ2cyRDMTnS1k9j0LxpU'
@@ -26,11 +33,18 @@ def getHeatMap():
 def triggerData():
 	print('triggerring new data')
 	createHeatMap()
+	print('triggerring new data')
 	summaryData()
 	return 'trigger hit'
 
+# @sched.scheduled_job('interval', seconds=10)
+# def test():
+# 	print ("TEST SUCCESS")
+
 
 if __name__=='__main__':
-    app.run(threaded=True,port=5000)
+	# sched.configure(timezone='Asia/Kolkata')
+	# sched.add_cron_job(test, minute='0-10')
+	app.run(threaded=True,port=5000)
 
 
