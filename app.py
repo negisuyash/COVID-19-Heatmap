@@ -18,6 +18,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
+	triggerData()
 	with open('./data/data.json','r') as inputfile:
 		data=json.load(inputfile)
 	deaths=data['data']['summary']['deaths']
