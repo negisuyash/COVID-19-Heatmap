@@ -1,7 +1,8 @@
 
-from flask import Flask,render_template,request,send_file
+from flask import Flask,render_template,request,send_file,jsonify
 from dataFetcher import HeatMapper
 import json
+from UnofficalAPI import InternalDataAPI
 # from apscheduler.scheduler import Scheduler
 
 
@@ -40,6 +41,15 @@ def triggerData():
 # @sched.scheduled_job('interval', seconds=10)
 # def test():
 # 	print ("TEST SUCCESS")
+
+@app.route('/unofficalData')
+def unofficalData():
+	internalData=InternalDataAPI()
+	return jsonify(result=internalData.convertToConsumedJSON(internalData.fetchData()))
+
+@app.route('/test')
+def test():
+	return jsonify(result=InternalDataAPI().fetchData())
 
 
 if __name__=='__main__':
