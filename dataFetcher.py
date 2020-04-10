@@ -15,7 +15,7 @@ from UnofficalAPI import InternalDataAPI
 class HeatMapper:
 
 	def createHeatMap(self):
-		gmaps.configure(api_key='AIzaSyCu4BBQA_f5u428YPwFB1Zls8UwFXaFN1g')
+		gmaps.configure(api_key='API KEY HERE')
 
 		# covid19_data=requests.get('https://api.rootnet.in/covid19-in/stats/latest').json()
 		covid19_data=self.summaryData()
