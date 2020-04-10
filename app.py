@@ -12,8 +12,6 @@ from UnofficalAPI import InternalDataAPI
 # sched.start()
 
 
-# API_KEY='AIzaSyBx1SkG_lcKjI1HJ2cyRDMTnS1k9j0LxpU'
-
 app=Flask(__name__)
 
 @app.route('/')
