@@ -15,5 +15,5 @@ jupyter-console==6.0.0
 jupyter-core==4.4.0
 requests==2.21.0
 webencodings==0.5.1
-Werkzeug==0.15.1
+Werkzeug==0.15.5
 widgetsnbextension==3.4.2
